@@ -237,7 +237,6 @@ board.canvas.addEventListener('click', (event) => {
 
     // Check for result
     result = getResult(boardCells)
-    console.log(result)
     if(result.winner) {
         board.disableBoard()
         turnElement.style.display = 'none'
