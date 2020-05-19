@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.game-interface {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Game Header */
+.game-interface .game-header {
+    margin: 0;
+    padding: 0;
+    top: 20px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.game-interface .game-header #game-title {
+    margin: 0;
+    padding: 0;
+    color: wheat;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.game-interface .game-header #player-turn {
+    margin: 0;
+    padding: 0.5px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Game Canvas */
+.game-board {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.game-board #canvas-board {
+    margin: 0;
+    padding: 0;
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Game Over Display */
+.game-over-display {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    text-align: center;
+}
+
+.game-over-display .game-over-items {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    top: 35%;
+}
+
+.game-over-display .game-over-items #game-result-display {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1px;
+    text-align:  center;
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.game-over-display .game-over-items #winner-name {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.game-over-display .game-over-items #game-restart {
+    position: relative;
+    background-color: teal;
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    border: 1px solid whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    min-width: 80px;
+    min-height: 30px;
+    width: 10vw;
+    height: 4vh;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.game-over-display .game-over-items #game-restart:hover {
+    background-color: cadetblue;
+    border: 1px solid whitesmoke;
+}

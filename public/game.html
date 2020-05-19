@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="css/game.css">
 </head>
 <body>
     <!-- Game Interface -->
@@ -23,10 +25,16 @@
 
     <!-- Game Over Display -->
     <div class="game-over-display" id="game-over-display">
-        <h3 class="game-result-display" id="game-result-display"></h3>
-        <button class="game-restart" id="game-restart">Restart Game</button>
+        <div class="game-over-items" id="game-over-items">
+            <h2 class="game-result-display" id="game-result-display">Game Over!</h2>
+            <h3 class="winner-name" id="winner-name"></h3>
+            <button class="game-restart" id="game-restart">Restart</button>
+        </div>
     </div>
 
     <!-- JavaScript Calls Section -->
+
+    <script type='module' src="js/utils/gameOver.js"></script>
+    <script type="module" src="js/game.js"></script>
 </body>
 </html>
